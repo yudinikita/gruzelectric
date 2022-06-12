@@ -3,7 +3,7 @@ import NextLink from 'next/link'
 import { Image, styled } from '@nextui-org/react'
 
 const LogoImage = styled(Image, {
-  width: '38.44vw !important',
+  width: '50vw !important',
   zIndex: '501',
   '@md': {
     width: '275px !important',

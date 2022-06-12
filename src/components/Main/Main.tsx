@@ -6,7 +6,7 @@ interface MainProps {
 }
 
 const MainContainer = styled('main', {
-  padding: '6.25vw 5vw 0',
+  padding: '6.25vw 0 0',
   position: 'relative',
   '@sm': {
     padding: '2.08vw 2.77vw 0',

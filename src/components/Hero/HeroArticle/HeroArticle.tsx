@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Spacer } from '@nextui-org/react'
+import { Row, Spacer } from '@nextui-org/react'
 import HeroHeadline from 'components/Hero/HeroArticle/HeroHeadline'
 import HeroDescription from 'components/Hero/HeroArticle/HeroDescription'
 
@@ -13,7 +13,7 @@ export default function HeroArticle({
   description,
 }: HeroArticleProps) {
   return (
-    <Container as="article" fluid>
+    <article>
       <Row fluid wrap="wrap" justify="center">
         <HeroHeadline>{headline}</HeroHeadline>
       </Row>
@@ -21,6 +21,6 @@ export default function HeroArticle({
       <Row fluid wrap="wrap" justify="center">
         <HeroDescription>{description}</HeroDescription>
       </Row>
-    </Container>
+    </article>
   )
 }
