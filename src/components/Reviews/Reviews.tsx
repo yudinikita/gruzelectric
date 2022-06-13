@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { v4 } from 'uuid'
 import { Grid } from '@nextui-org/react'
+import { motion } from 'framer-motion'
 import ReviewsContainer from 'components/Reviews/ReviewsContainer'
 import ReviewsTitle from 'components/Reviews/ReviewsTitle'
 import ReviewsCard, { ReviewsCardProps } from 'components/Reviews/ReviewsCard'
 import ReviewsButtons from 'components/Reviews/ReviewsButtons'
 import ModalFeedback from 'components/ModalFeedback/ModalFeedback'
 import data from 'data/data'
+import { animConfig } from 'config/animConfig'
 
 export default function Reviews() {
   const [reviewsCount, setReviewsCount] = useState(data.reviews.defaultCount)
@@ -38,12 +40,14 @@ const renderReviews = (reviews: ReviewsCardProps[], count: number) => {
   return reviews.slice(0, count).map((item) => {
     return (
       <Grid key={v4()}>
-        <ReviewsCard
-          name={item.name}
-          desc={item.desc}
-          avatarSrc={item.avatarSrc}
-          text={item.text}
-        />
+        <motion.div {...animConfig.block}>
+          <ReviewsCard
+            name={item.name}
+            desc={item.desc}
+            avatarSrc={item.avatarSrc}
+            text={item.text}
+          />
+        </motion.div>
       </Grid>
     )
   })
