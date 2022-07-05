@@ -24,7 +24,7 @@ export default function Reviews() {
   return (
     <ReviewsContainer>
       <ReviewsTitle text={data.reviews.title} />
-      <Grid.Container gap={3}>
+      <Grid.Container gap={3} justify="center">
         {renderReviews(data.reviews.items, reviewsCount)}
       </Grid.Container>
       <ReviewsButtons
