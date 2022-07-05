@@ -26,8 +26,13 @@ export default function Tachographs() {
             m: '0 auto',
           }}
         >
-          <Card.Header>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <Card.Header css={{ justifyContent: 'center' }}>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+              }}
+            >
               <Text
                 size="8vw"
                 weight="bold"
@@ -41,7 +46,10 @@ export default function Tachographs() {
             </div>
           </Card.Header>
           <Card.Body>
-            <Text size="$md" css={{ '@sm': { fs: '$xl2' } }}>
+            <Text
+              size="$md"
+              css={{ '@sm': { fs: '$xl2' }, textAlign: 'center' }}
+            >
               Наши специалисты готовы установить тахографы на грузовые
               автомобили различных типов (грузовики, самосвалы, тягачи), на
               микроавтобусы и автобусы большой вместимости, на специальную
@@ -49,7 +57,7 @@ export default function Tachographs() {
               предназначенную для перевозки опасных грузов.
             </Text>
           </Card.Body>
-          <Card.Footer>
+          <Card.Footer css={{ justifyContent: 'center' }}>
             <Button bordered auto onClick={handleClickAction}>
               Установить
             </Button>
