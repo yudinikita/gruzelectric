@@ -30,6 +30,7 @@ export default function NavBar() {
         <MenuLinks links={menuLinks} />
         <MenuSpacer x={3} />
         <MenuTel title={contacts.tel.title} href={contacts.tel.href} />
+        <MenuTel title={'+7 953 739-74-82'} href={'89537397482'} />
         <MenuSpacer x={3} />
         <MenuButton
           title={contacts.buttonAction.title}

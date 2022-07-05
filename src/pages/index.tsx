@@ -7,7 +7,6 @@ import Advantages from 'components/Advantages/Advantages'
 import Order from 'components/Order/Order'
 import Services from 'components/Services/Services'
 import Team from 'components/Team/Team'
-import Features from 'components/Features/Features'
 import Reviews from 'components/Reviews/Reviews'
 import Request from 'components/Request/Request'
 import Contacts from 'components/Contacts/Contacts'
@@ -37,8 +36,8 @@ const Home: NextPage = () => {
         <Team />
         <Spacer y={sectionSpace} />
         <Services />
-        <Spacer y={sectionSpace} />
-        <Features />
+        {/*<Spacer y={sectionSpace} />*/}
+        {/*<Features />*/}
         <Spacer y={sectionSpace} />
         <Reviews />
         <Spacer y={sectionSpace} />
