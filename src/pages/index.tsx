@@ -12,6 +12,7 @@ import Request from 'components/Request/Request'
 import Contacts from 'components/Contacts/Contacts'
 import data from 'data/data'
 import type { NextPage } from 'next'
+import Tachographs from 'components/Tachographs/Tachographs'
 
 const sectionSpace = 10
 
@@ -32,6 +33,8 @@ const Home: NextPage = () => {
         <Order />
         <Spacer y={sectionSpace} />
         <Advantages />
+        <Spacer y={sectionSpace} />
+        <Tachographs />
         <Spacer y={sectionSpace} />
         <Team />
         <Spacer y={sectionSpace} />
