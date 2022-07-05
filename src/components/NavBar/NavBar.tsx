@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { styled } from '@nextui-org/react'
 import Logo from 'components/Logo/Logo'
 import MenuLinks from 'components/Menu/MenuLinks/MenuLinks'
 import NavBarContainer from 'components/NavBar/NavBarContainer'
@@ -29,8 +30,10 @@ export default function NavBar() {
       <MobileMenuContainer open={isOpenMobileMenu}>
         <MenuLinks links={menuLinks} />
         <MenuSpacer x={3} />
-        <MenuTel title={contacts.tel.title} href={contacts.tel.href} />
-        <MenuTel title={'+7 953 739-74-82'} href={'89537397482'} />
+        <TelContainer>
+          <MenuTel title={contacts.tel.title} href={contacts.tel.href} />
+          <MenuTel title={'7 953 739-74-82'} href={'89537397482'} />
+        </TelContainer>
         <MenuSpacer x={3} />
         <MenuButton
           title={contacts.buttonAction.title}
@@ -44,3 +47,8 @@ export default function NavBar() {
     </NavBarContainer>
   )
 }
+
+const TelContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+})
