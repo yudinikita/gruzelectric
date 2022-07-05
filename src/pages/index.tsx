@@ -10,9 +10,10 @@ import Team from 'components/Team/Team'
 import Reviews from 'components/Reviews/Reviews'
 import Request from 'components/Request/Request'
 import Contacts from 'components/Contacts/Contacts'
+import Tachographs from 'components/Tachographs/Tachographs'
+import About from 'components/About/About'
 import data from 'data/data'
 import type { NextPage } from 'next'
-import Tachographs from 'components/Tachographs/Tachographs'
 
 const sectionSpace = 10
 
@@ -29,12 +30,14 @@ const Home: NextPage = () => {
       </Head>
       <MainLayout>
         <Hero />
+        <Spacer y={sectionSpace / 2} />
+        <Tachographs />
         <Spacer y={sectionSpace} />
         <Order />
         <Spacer y={sectionSpace} />
         <Advantages />
         <Spacer y={sectionSpace} />
-        <Tachographs />
+        <About />
         <Spacer y={sectionSpace} />
         <Team />
         <Spacer y={sectionSpace} />

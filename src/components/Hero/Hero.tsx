@@ -23,7 +23,7 @@ export default function Hero() {
         <Row fluid wrap="wrap" justify="center">
           <HeroArticle
             headline={data.hero.headline}
-            description={data.hero.description}
+            // description={data.hero.description}
           />
         </Row>
       </HeroContainer>
