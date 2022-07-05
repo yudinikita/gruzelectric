@@ -38,13 +38,13 @@ const Home: NextPage = () => {
         <Spacer y={sectionSpace} />
         <Advantages />
         <Spacer y={sectionSpace} />
+        <Videocam />
+        <Spacer y={sectionSpace} />
         <About />
         <Spacer y={sectionSpace} />
         <Team />
         <Spacer y={sectionSpace} />
         <Services />
-        <Spacer y={sectionSpace} />
-        <Videocam />
         {/*<Spacer y={sectionSpace} />*/}
         {/*<Features />*/}
         <Spacer y={sectionSpace} />
