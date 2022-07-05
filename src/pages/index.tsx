@@ -12,6 +12,7 @@ import Request from 'components/Request/Request'
 import Contacts from 'components/Contacts/Contacts'
 import Tachographs from 'components/Tachographs/Tachographs'
 import About from 'components/About/About'
+import Videocam from 'components/Videocam/Videocam'
 import data from 'data/data'
 import type { NextPage } from 'next'
 
@@ -42,6 +43,8 @@ const Home: NextPage = () => {
         <Team />
         <Spacer y={sectionSpace} />
         <Services />
+        <Spacer y={sectionSpace} />
+        <Videocam />
         {/*<Spacer y={sectionSpace} />*/}
         {/*<Features />*/}
         <Spacer y={sectionSpace} />
